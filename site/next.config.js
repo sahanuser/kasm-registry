@@ -2,10 +2,10 @@
 
 const nextConfig = {
   env: {
-    name: 'Aster Globel',
-    description: 'The official store for Aster workspaces.',
+    name: 'Kasm Technologies',
+    description: 'The official store for Kasm supported workspaces.',
     icon: '/img/logo.svg',
-    listUrl: 'https://sahanuser.github.io/kasm-registry/',
+    listUrl: 'https://registry.kasmweb.com/',
     contactUrl: 'https://kasmweb.com/support',
   },
   reactStrictMode: true,
