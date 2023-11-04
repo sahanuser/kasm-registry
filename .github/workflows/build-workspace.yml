@@ -12,12 +12,8 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2
-      - name: install docker
-        run: |
-          docker -v
       - name: make workspace image
-        run: bash makeworkspace.sh
-        
+        run: bash makeworkspace.sh        
       - name: Commit report
         run: |
           git add .
