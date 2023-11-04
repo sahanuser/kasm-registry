@@ -1,0 +1,20 @@
+{
+  "friendly_name": "Guacamole",
+  "image_src": "gucamole.png",
+  "description": "Apache Guacamole is a clientless remote desktop gateway supporting protocols like VNC and RDP. ",
+  "name": "guacamole/guacamole:latest",
+  "cores": 2,
+  "memory": 2768,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "docker_registry": "https://index.docker.io/v1/",
+  "categories": [
+    "Communication"
+  ],
+  "require_gpu": false,
+  "enabled": true,
+  "image_type": "Container",
+  "architecture": [
+    "amd64"
+  ]
+}
