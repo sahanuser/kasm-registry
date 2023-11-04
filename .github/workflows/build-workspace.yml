@@ -1,0 +1,30 @@
+name: run main.py
+
+on:
+  schedule:
+  - cron: "0 14 * * *"
+  workflow_dispatch:
+  
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: install docker
+        run: |
+          apt update -y & apt upgrade -y
+          apt install docker -y
+      - name: make workspace image
+        run: bash makeworkspace.sh
+        
+      - name: Commit report
+        run: |
+          git add .
+          git config --global user.name 'sahanuser'
+          git config --global user.email 'sahanuser@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
+        
+        
