@@ -1,6 +1,6 @@
 {
   "friendly_name": "Guacamole",
-  "image_src": "blob:https://sahanuser.github.io/1494bd50-7fc9-432b-8b8c-501ce6414660",
+  "image_src": "gucamole.png",
   "description": "Apache Guacamole is a clientless remote desktop gateway supporting protocols like VNC and RDP. ",
   "name": "guacamole/guacamole:latest",
   "cores": 2,
